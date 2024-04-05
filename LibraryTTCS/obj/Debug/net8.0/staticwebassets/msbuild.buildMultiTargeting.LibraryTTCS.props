@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LibraryTTCS.props" />
+</Project>
