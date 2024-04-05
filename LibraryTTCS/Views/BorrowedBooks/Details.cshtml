@@ -1,0 +1,30 @@
+﻿@model LibraryTTCS.Models.BorrowedBook
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BorrowedBook</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Borrowing)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Borrowing.BorrowingID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Book)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Book.BookID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.BorrowedBookID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
